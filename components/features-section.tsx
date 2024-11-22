@@ -7,23 +7,23 @@ import { Sparkles, Zap, Shield, Globe } from 'lucide-react'
 const features = [
   {
     icon: Sparkles,
-    title: "智能对话",
-    description: "我们的AI模型理解上下文和细微差别，为复杂查询提供类人的回应。"
+    title: "Intelligent Conversations",
+    description: "Our AI model understands context and nuances, providing human-like responses to complex queries."
   },
   {
     icon: Zap,
-    title: "实时处理",
-    description: "由尖端技术支持的闪电般快速响应，延迟最小化。"
+    title: "Real-time Processing",
+    description: "Lightning-fast responses powered by cutting-edge technology, minimizing latency."
   },
   {
     icon: Shield,
-    title: "安全私密",
-    description: "企业级安全性，为您的所有对话提供端到端加密。"
+    title: "Secure and Private",
+    description: "Enterprise-grade security with end-to-end encryption for all your conversations."
   },
   {
     icon: Globe,
-    title: "多语言支持",
-    description: "以50多种语言进行准确翻译和文化理解的交流。"
+    title: "Multilingual Support",
+    description: "Accurate translation and cultural understanding in over 50 languages."
   }
 ]
 
