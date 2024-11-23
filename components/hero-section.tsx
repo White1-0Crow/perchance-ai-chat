@@ -16,13 +16,10 @@ export function HeroSection() {
           <p className="mx-auto md:mx-0 max-w-[700px] text-lg text-muted-foreground sm:text-xl">
             Unlock the power of intelligent conversations with Perchance AI Chat. Our advanced AI understands context, learns from interactions, and provides meaningful responses in real-time, all at no cost to you.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <div className="flex justify-center md:justify-start">
             <Button size="lg" className="text-lg font-semibold transition-all hover:scale-105">
               Get Started For Free
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button size="lg" variant="outline" className="text-lg font-semibold">
-              Learn More
             </Button>
           </div>
         </div>
