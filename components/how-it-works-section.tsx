@@ -48,16 +48,7 @@ export function HowItWorksSection() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <div className="relative aspect-video md:order-last">
-          <Image
-            src="/placeholder.svg?height=300&width=400"
-            alt="Knowledge base demo"
-            width={400}
-            height={300}
-            className="object-cover rounded-lg shadow-xl"
-          />
-        </div>
-        <div className="space-y-4">
+        <div className="space-y-4 md:order-last">
           <h3 className="text-2xl font-bold sm:text-3xl">Vast Knowledge Base</h3>
           <p className="text-muted-foreground text-lg">
             Access a comprehensive knowledge base covering various topics, from technical subjects to creative writing, all while maintaining accuracy and relevance.
@@ -65,6 +56,14 @@ export function HowItWorksSection() {
           <Button size="lg" className="text-lg">
             Explore Knowledge Base →
           </Button>
+        </div>
+        <div className="relative aspect-video">
+          <Image
+            src="/images/feature-2.png"
+            alt="Knowledge base demo"
+            fill
+            className="object-cover rounded-lg shadow-xl"
+          />
         </div>
       </motion.div>
 
