@@ -7,17 +7,7 @@ import { motion } from 'framer-motion'
 
 export function HeroSection() {
   return (
-    <section className="container py-12 md:py-24 lg:py-32 relative overflow-hidden">
-      <motion.div 
-        className="absolute top-10 left-10 w-20 h-20 bg-secondary rounded-full"
-        animate={{ scale: [1, 1.2, 1], rotate: 360 }}
-        transition={{ duration: 5, repeat: Infinity }}
-      />
-      <motion.div 
-        className="absolute bottom-10 right-10 w-16 h-16 bg-accent rounded-full"
-        animate={{ y: [0, -20, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-      />
+    <section className="container py-12 md:py-24 lg:py-32">
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
         <div className="flex-1 space-y-4 text-center md:text-left">
           <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
