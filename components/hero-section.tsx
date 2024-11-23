@@ -26,12 +26,11 @@ export function HeroSection() {
         <div className="flex-1 flex justify-center md:justify-end">
           <div className="relative w-full max-w-lg aspect-square">
             <Image
-              src="/placeholder.svg?height=512&width=512"
+              src="/images/hero-image.png"
               alt="Perchance AI Chat Interface"
-              width={512}
-              height={512}
+              fill
               className="object-contain rounded-lg shadow-2xl"
-            />
+             />
           </div>
         </div>
       </div>

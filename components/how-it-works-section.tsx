@@ -33,11 +33,10 @@ export function HowItWorksSection() {
         </div>
         <div className="relative aspect-video">
           <Image
-            src="/placeholder.svg?height=300&width=400"
-            alt="Natural conversation demo"
-            width={400}
-            height={300}
-            className="object-cover rounded-lg shadow-xl"
+           src="/images/feature-1.png"
+           alt="Natural conversation demo"
+           fill
+           className="object-cover rounded-lg shadow-xl"
           />
         </div>
       </motion.div>
@@ -90,11 +89,10 @@ export function HowItWorksSection() {
         </div>
         <div className="relative aspect-video">
           <Image
-            src="/placeholder.svg?height=300&width=400"
-            alt="Advanced learning demo"
-            width={400}
-            height={300}
-            className="object-cover rounded-lg shadow-xl"
+           src="/images/feature-3.png"
+           alt="Advanced learning demo"
+           fill
+           className="object-cover rounded-lg shadow-xl"
           />
         </div>
       </motion.div>
