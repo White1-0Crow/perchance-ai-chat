@@ -6,37 +6,37 @@ import { motion } from 'framer-motion'
 const testimonials = [
   {
     rating: 5,
-    quote: "This AI chat is incredibly intuitive! It understands context perfectly and provides meaningful responses every time.",
+    quote: "Perchance AI Chat’s customization is unmatched. I’ve created an entire cast of characters for my creative projects, and they feel so alive!",
     author: "Sarah K.",
     emoji: "🤯"
   },
   {
     rating: 5,
-    quote: "I can't believe this is free. The quality of conversations and responses is outstanding. Highly recommended!",
+    quote: "I love how I can just open the site and start chatting without needing to register. It’s fast, efficient, and respects my privacy.",
     author: "Michael R.",
     emoji: "🎉"
   },
   {
     rating: 5,
-    quote: "Been using this for my daily work and research. It's become an indispensable tool for brainstorming and problem-solving.",
+    quote: "The ability to store everything locally is a game-changer. I know my data is safe, and that gives me peace of mind.",
     author: "David L.",
     emoji: "💡"
   },
   {
     rating: 5,
-    quote: "The response speed and accuracy are amazing. This is exactly what I've been looking for in an AI chat service.",
+    quote: "Perchance AI Chat is so versatile. I use it for brainstorming at work and then switch to creative storytelling in my free time.",
     author: "Emily W.",
     emoji: "⚡"
   },
   {
     rating: 5,
-    quote: "Simply amazing! The AI understands complex queries and provides detailed, relevant answers. A game-changer!",
+    quote: "Importing characters from other platforms was incredibly easy. It’s amazing to see how much better they perform here.",
     author: "James T.",
     emoji: "🚀"
   },
   {
     rating: 5,
-    quote: "I use this every day for various tasks. The AI's ability to maintain context throughout conversations is impressive.",
+    quote: "This platform is free, private, and incredibly smart. What’s not to love? Perchance AI Chat has become my go-to AI tool.",
     author: "Lisa M.",
     emoji: "🌟"
   }
@@ -47,10 +47,10 @@ export function TestimonialsSection() {
     <section className="container py-12 md:py-24 lg:py-32 bg-muted/50">
       <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-          Perchance AI Loved by Users Worldwide 🌍
+              Why Users Love Perchance AI Chat 🌍
         </h2>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-          Join thousands of satisfied users who are experiencing the power of intelligent conversations with our AI chat platform
+            Don’t just take our word for it—here’s what our users have to say:
         </p>
         <div className="text-3xl">⭐⭐⭐⭐⭐</div>
       </div>

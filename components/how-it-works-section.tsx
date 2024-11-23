@@ -9,10 +9,10 @@ export function HowItWorksSection() {
     <section id="how-it-works" className="container py-12 md:py-24 lg:py-32">
       <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center mb-16">
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-          Immerse yourself in the world of Perchance AI
+        How Does Perchance AI Chat Work?
         </h2>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-          Experience the next generation of AI chat with our powerful, intuitive, and context-aware platform
+        Getting started with Perchance AI Chat is effortless. Here’s a breakdown of how it works:
         </p>
       </div>
 
@@ -23,9 +23,9 @@ export function HowItWorksSection() {
         transition={{ duration: 0.5 }}
       >
         <div className="space-y-4">
-          <h3 className="text-2xl font-bold sm:text-3xl">Natural Conversations</h3>
+          <h3 className="text-2xl font-bold sm:text-3xl">Start Chatting Instantly</h3>
           <p className="text-muted-foreground text-lg">
-            Our AI maintains context throughout the conversation, understanding nuances and providing relevant, meaningful responses that feel natural and engaging.
+          Perchance AI Chat eliminates the barriers to entry. Visit the website, choose the default AI persona, or start building your own character. With no registration required, you can dive into meaningful conversations within seconds.
           </p>
           <Button size="lg" className="text-lg">
             Try Perchance AI Now →
@@ -49,9 +49,12 @@ export function HowItWorksSection() {
         transition={{ duration: 0.5, delay: 0.2 }}
       >
         <div className="space-y-4 md:order-last">
-          <h3 className="text-2xl font-bold sm:text-3xl">Vast Knowledge Base</h3>
+          <h3 className="text-2xl font-bold sm:text-3xl">Create and Customize Characters</h3>
           <p className="text-muted-foreground text-lg">
-            Access a comprehensive knowledge base covering various topics, from technical subjects to creative writing, all while maintaining accuracy and relevance.
+          Unleash your creativity by designing characters that fit your needs:
+            Name Your Character: Give your AI a unique identity.
+            Set Personality Traits: Define how your character responds, thinks, and interacts.
+            Add Visuals: Upload or link a profile picture to bring your character to life.
           </p>
           <Button size="lg" className="text-lg">
             Explore Knowledge Base →
@@ -74,9 +77,12 @@ export function HowItWorksSection() {
         transition={{ duration: 0.5, delay: 0.4 }}
       >
         <div className="space-y-4">
-          <h3 className="text-2xl font-bold sm:text-3xl">Advanced Learning</h3>
+          <h3 className="text-2xl font-bold sm:text-3xl">Save, Load, and Import Data</h3>
           <p className="text-muted-foreground text-lg">
-            Our AI continuously learns and adapts to provide increasingly accurate and personalized responses, making each interaction more valuable than the last.
+          With local data storage, Perchance AI Chat ensures that your creations are secure and easily accessible:
+            Save and revisit conversations directly from your browser.
+            Load previously created characters and continue your sessions.
+            Import characters from other platforms and integrate them seamlessly.
           </p>
           <Button size="lg" className="text-lg">
             Start Learning Now →

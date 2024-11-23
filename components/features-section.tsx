@@ -7,23 +7,23 @@ import { Sparkles, Zap, Shield, Globe } from 'lucide-react'
 const features = [
   {
     icon: Sparkles,
-    title: "Intelligent Conversations",
-    description: "Our AI model understands context and nuances, providing human-like responses to complex queries."
+    title: "True Customization",
+    description: "Unlike most AI platforms, Perchance AI Chat allows you to create fully customized AI characters. Define their name, personality traits, and even their profile image to craft a virtual companion that’s uniquely yours. Whether you want a friendly conversationalist, a witty assistant, or a fictional character for storytelling, the possibilities are endless.."
   },
   {
     icon: Zap,
-    title: "Real-time Processing",
-    description: "Lightning-fast responses powered by cutting-edge technology, minimizing latency."
+    title: "Privacy-First Design",
+    description: "In a world where privacy is often overlooked, Perchance AI Chat gives you complete control. Your conversations and data are stored locally in your browser, ensuring that nothing is uploaded to the cloud. This commitment to privacy means you can explore ideas and share information without worry."
   },
   {
     icon: Shield,
-    title: "Secure and Private",
-    description: "Enterprise-grade security with end-to-end encryption for all your conversations."
+    title: "Effortless Accessibility",
+    description: "No registrations, no subscriptions, no hidden fees—just instant access. With Perchance AI Chat, you don’t have to create an account or pay for premium features. Visit the platform and start chatting immediately. It’s as simple as that."
   },
   {
     icon: Globe,
-    title: "Multilingual Support",
-    description: "Accurate translation and cultural understanding in over 50 languages."
+    title: "Seamless Integration and Import",
+    description: "Already have characters you’ve developed on other platforms like Character AI? Perchance AI Chat makes it easy to import and enhance them. Copy and paste their descriptions into our system to continue your creative journey without missing a beat."
   }
 ]
 
@@ -32,10 +32,10 @@ export function FeaturesSection() {
     <section id="features" className="container py-12 md:py-24 lg:py-32">
       <div className="mx-auto flex max-w-[58rem] flex-col items-center justify-center gap-4 text-center">
         <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-6xl">
-          Features that Set Us Apart
+        What Makes Perchance AI Chat Unique?
         </h2>
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-          Discover why Perchance AI is the preferred choice for intelligent conversations
+        Perchance AI Chat isn’t just another chatbot—it’s a game-changer in the world of AI communication. Here’s what sets us apart:
         </p>
       </div>
       <div className="mx-auto grid justify-center gap-4 sm:grid-cols-2 md:max-w-[64rem] md:grid-cols-3 lg:grid-cols-4 mt-12">

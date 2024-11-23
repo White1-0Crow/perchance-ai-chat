@@ -10,24 +10,24 @@ import { motion } from 'framer-motion'
 
 const faqs = [
   {
-    question: "What is Perchance AI Chat?",
-    answer: "Perchance AI Chat is a free, advanced artificial intelligence chatbot that uses natural language processing to engage in human-like conversations on a wide range of topics."
-  },
-  {
     question: "Is Perchance AI Chat really free?",
-    answer: "Yes, Perchance AI Chat is completely free to use. We believe in making advanced AI technology accessible to everyone."
+    answer: "Yes! Perchance AI Chat is completely free to use with no hidden fees or subscriptions. You can access all features without any payment."
   },
   {
-    question: "How accurate are the AI's responses?",
-    answer: "Our AI is trained on a vast amount of data and uses advanced algorithms to generate accurate and contextually relevant responses. However, as with any AI, it's important to verify critical information."
+    question: "Do I need to create an account to use Perchance AI Chat?",
+    answer: "No, there’s no need to register or log in. Simply visit the website and start chatting immediately—fast and hassle-free."
   },
   {
-    question: "Can I use Perchance AI Chat for commercial purposes?",
-    answer: "Yes, you can use Perchance AI Chat for both personal and commercial purposes. However, please refer to our terms of service for specific guidelines and limitations."
+    question: "How does Perchance AI Chat protect my privacy?",
+    answer: "Perchance AI Chat prioritizes your privacy. All your data, including conversations and custom characters, is stored locally in your browser. This ensures complete control and prevents any data from being uploaded to the cloud."
   },
   {
-    question: "How does Perchance AI Chat handle my privacy?",
-    answer: "We take your privacy seriously. All conversations are encrypted, and we do not store personal information. For more details, please check our privacy policy."
+    question: "Can I create custom AI characters?",
+    answer: "Absolutely! You can fully customize AI characters by naming them, defining their personality traits, and even adding profile pictures. This feature is perfect for creative projects or tailored interactions."
+  },
+  {
+    question: "Can I import characters from other platforms?",
+    answer: "Yes, Perchance AI Chat allows you to easily import characters from platforms like Character AI. Simply copy the character description and paste it into Perchance AI Chat to continue your creative journey."
   }
 ]
 
