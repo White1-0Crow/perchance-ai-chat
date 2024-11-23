@@ -8,7 +8,7 @@ const features = [
   {
     icon: Sparkles,
     title: "True Customization",
-    description: "Unlike most AI platforms, Perchance AI Chat allows you to create fully customized AI characters. Define their name, personality traits, and even their profile image to craft a virtual companion that’s uniquely yours. Whether you want a friendly conversationalist, a witty assistant, or a fictional character for storytelling, the possibilities are endless.."
+    description: "Unlike most AI platforms, Perchance AI Chat allows you to create fully customized AI characters. Define their name, personality traits, and even their profile image to craft a virtual companion that’s uniquely yours."
   },
   {
     icon: Zap,
