@@ -1,82 +1,62 @@
-import Link from 'next/link'
-import Image from 'next/image'
-import { Card } from "@/components/ui/card"
+import { notFound } from 'next/navigation'
+import { Metadata } from 'next'
 
-const blogPosts = [
- {
-   id: 1,
+// This type represents the structure of our blog post data
+type BlogPost = {
+ title: string;
+ content: string;
+ date: string;
+}
+
+// This type represents our collection of blog posts
+type BlogPosts = {
+ [key: string]: BlogPost;
+}
+
+const blogPosts: BlogPosts = {
+ "intro-to-ai-chatbots": {
    title: "5 Reasons Why Perchance AI Chat is Better Than Other AI Platforms",
-   slug: "intro-to-ai-chatbots",
-   description: "Explore the basics of AI chatbots and their growing impact on various industries.",
-   date: "June 1, 2024",
-   image: "/placeholder.svg?height=200&width=300",
+   content: "Artificial Intelligence is revolutionizing the customer service industry. AI-powered chatbots and virtual assistants are providing instant, 24/7 support to customers, handling routine queries efficiently and freeing up human agents to focus on more complex issues. These AI systems can analyze customer data to provide personalized recommendations and solutions, improving customer satisfaction and loyalty. As AI continues to evolve, we can expect even more seamless and intuitive customer service experiences in the future.",
+   date: "May 15, 2024"
  },
- {
-   id: 2,
+ "future-of-conversational-ai": {
    title: "How to Create a Perfect AI Character for Storytelling",
-   slug: "future-of-conversational-ai",
-   description: "Discover what the future holds for conversational AI and its potential applications.",
-   date: "June 15, 2024",
-   image: "/placeholder.svg?height=200&width=300",
+   content: "AI chatbots have become an integral part of many businesses' customer service strategies. To ensure your chatbot is performing at its best, consider these optimization techniques: 1) Continuously train your AI model with new data, 2) Implement context awareness for more natural conversations, 3) Use sentiment analysis to better understand user emotions, 4) Integrate with other systems for a seamless user experience, and 5) Regularly analyze chatbot performance metrics and user feedback for ongoing improvements.",
+   date: "June 2, 2024"
  },
- {
-   id: 3,
+ "ai-transforming-customer-service": {
    title: "The Future of Privacy in AI Chat Platforms",
-   slug: "ai-transforming-customer-service",
-   description: "Learn about the revolutionary impact of AI on customer service and support.",
-   date: "July 1, 2024",
-   image: "/placeholder.svg?height=200&width=300",
- }
-]
+   content: "Natural Language Processing (NLP) is a branch of artificial intelligence that focuses on the interaction between computers and humans using natural language. It's the technology that powers modern AI chatbots, allowing them to understand, interpret, and generate human language. Key components of NLP include tokenization, part-of-speech tagging, named entity recognition, sentiment analysis, and machine translation. As NLP continues to advance, we can expect even more sophisticated and human-like interactions with AI systems.",
+   date: "June 20, 2024"
+ },
+}
 
-export default function BlogPage() {
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+ const post = blogPosts[params.slug]
+ if (!post) {
+   return {
+     title: 'Post Not Found'
+   }
+ }
+ return {
+   title: post.title,
+   description: post.content.substring(0, 160) + '...'
+ }
+}
+
+export default function BlogPost({ params }: { params: { slug: string } }) {
+ const post = blogPosts[params.slug]
+
+ if (!post) {
+   notFound()
+ }
+
  return (
    <div className="container mx-auto px-4 py-8">
-     <div className="text-center mb-12">
-       <h1 className="text-4xl font-bold mb-2">Perchance AI Blog</h1>
-       <p className="text-lg text-muted-foreground">
-         Explore the latest updates, guides, and insights about AI chat technology
-       </p>
-     </div>
-
-     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-       {blogPosts.map((post) => (
-         <Link href={`/blog/${post.slug}`} key={post.id}>
-           <Card className="group overflow-hidden border-0 shadow-md hover:shadow-xl transition-shadow duration-200">
-             <div className="relative">
-               {/* Corner Accent */}
-               <div className="absolute top-0 right-0 w-16 h-16 bg-primary/10 transform rotate-45 translate-x-8 -translate-y-8" />
-               
-               {/* Image */}
-               <div className="relative aspect-[3/2] overflow-hidden">
-                 <Image
-                   src={post.image}
-                   alt={post.title}
-                   fill
-                   className="object-cover transition-transform duration-200 group-hover:scale-105"
-                 />
-               </div>
-             </div>
-
-             <div className="p-4">
-               {/* Date */}
-               <div className="text-sm text-muted-foreground mb-2">
-                 {post.date}
-               </div>
-
-               {/* Title */}
-               <h2 className="text-xl font-semibold mb-2 group-hover:text-primary transition-colors">
-                 {post.title}
-               </h2>
-
-               {/* Description */}
-               <p className="text-muted-foreground text-sm line-clamp-2">
-                 {post.description}
-               </p>
-             </div>
-           </Card>
-         </Link>
-       ))}
+     <h1 className="text-3xl font-bold mb-4">{post.title}</h1>
+     <p className="text-sm text-gray-500 mb-4">{post.date}</p>
+     <div className="prose max-w-none">
+       <p>{post.content}</p>
      </div>
    </div>
  )
