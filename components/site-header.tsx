@@ -8,6 +8,13 @@ export function SiteHeader() {
       <div className="container flex h-14 items-center">
         <div className="mr-4 hidden md:flex">
           <Link href="/" className="mr-6 flex items-center space-x-2">
+          <Image
+              src="/logo.svg"
+              alt="Perchance AI Chat Logo"
+              width={32}
+              height={32}
+              className="mr-2"
+            />         
             <span className="hidden font-bold sm:inline-block">Perchance AI Chat</span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">

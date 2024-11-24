@@ -10,7 +10,8 @@ const nextConfig = {
       use: ["@svgr/webpack"]
     });
     return config;
-  }
+  },
+  output: 'export',  // 添加这一行来生成静态HTML
 }
 
 module.exports = nextConfig
