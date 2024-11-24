@@ -1,28 +1,31 @@
 "use client"
 
 import Link from "next/link"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { motion } from 'framer-motion'
 
 const blogPosts = [
   {
-    title: "The Future of AI in Customer Service",
-    description: "Explore how AI is revolutionizing customer support and engagement.",
-    date: "May 15, 2023",
+    title: "5 Reasons Why Perchance AI Chat is Better Than Other AI Platforms",
+    description: "A detailed comparison of how Perchance AI Chat excels in customization, privacy, and accessibility.",
+    date: "May 15, 2024",
     readTime: "5 min read",
+    slug: "intro-to-ai-chatbots",
   },
   {
-    title: "5 Ways to Optimize Your AI Chatbot",
-    description: "Learn the best practices to enhance your AI chatbot's performance.",
-    date: "June 2, 2023",
+    title: "How to Create a Perfect AI Character for Storytelling",
+    description: "Step-by-step guidance on using Perchance AI Chat to design characters that enhance your creative writing.",
+    date: "June 2, 2024",
     readTime: "7 min read",
+    slug: "future-of-conversational-ai",
   },
   {
-    title: "Understanding Natural Language Processing",
-    description: "A deep dive into the technology behind modern AI chatbots.",
-    date: "June 20, 2023",
+    title: "The Future of Privacy in AI Chat Platforms",
+    description: "An in-depth look at why local storage and user control are the next big trends in AI development.",
+    date: "June 20, 2024",
     readTime: "10 min read",
+    slug: "ai-transforming-customer-service",
   },
 ]
 
@@ -54,7 +57,9 @@ export function BlogSection() {
                 <p className="text-sm text-muted-foreground">{post.date} • {post.readTime}</p>
               </CardContent>
               <CardFooter>
-                <Button variant="outline" className="w-full">Read More</Button>
+                <Button variant="outline" className="w-full" asChild>
+                  <Link href={`/blog/${post.slug}`}>Read More</Link>
+                </Button>
               </CardFooter>
             </Card>
           </motion.div>
