@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardFooter, CardHeader, CardTitle，ardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { motion } from 'framer-motion'
 
