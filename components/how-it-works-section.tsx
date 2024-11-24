@@ -27,8 +27,10 @@ export function HowItWorksSection() {
           <p className="text-muted-foreground text-lg">
           Perchance AI Chat eliminates the barriers to entry. Visit the website, choose the default AI persona, or start building your own character. With no registration required, you can dive into meaningful conversations within seconds.
           </p>
-          <Button size="lg" className="text-lg">
-            Try Perchance AI Now →
+          <Button size="lg" asChild className="text-lg">
+            <a href="https://perchance.org/ai-chat" target="_blank" rel="noopener noreferrer">
+              Try Perchance AI Now →
+            </a>
           </Button>
         </div>
         <div className="relative aspect-video">
@@ -55,8 +57,10 @@ export function HowItWorksSection() {
             Set Personality Traits: Define how your character responds, thinks, and interacts.
             Add Visuals: Upload or link a profile picture to bring your character to life.
           </p>
-          <Button size="lg" className="text-lg">
-            Explore Knowledge Base →
+          <Button size="lg" asChild className="text-lg">
+            <a href="https://perchance.org/ai-chat" target="_blank" rel="noopener noreferrer">
+              Explore Knowledge Base →
+            </a>
           </Button>
         </div>
         <div className="relative aspect-video">
@@ -83,8 +87,10 @@ export function HowItWorksSection() {
             Load previously created characters and continue your sessions.
             Import characters from other platforms and integrate them seamlessly.
           </p>
-          <Button size="lg" className="text-lg">
-            Start Learning Now →
+          <Button size="lg" asChild className="text-lg">
+            <a href="https://perchance.org/ai-chat" target="_blank" rel="noopener noreferrer">
+              Start Learning Now →
+            </a>
           </Button>
         </div>
         <div className="relative aspect-video">

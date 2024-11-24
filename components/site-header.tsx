@@ -17,7 +17,11 @@ export function SiteHeader() {
           </nav>
         </div>
         <div className="flex flex-1 items-center justify-end space-x-2">
-          <Button>Get Started</Button>
+          <Button asChild>
+            <a href="https://perchance.org/ai-chat" target="_blank" rel="noopener noreferrer">
+              Get Started
+            </a>
+          </Button>
           <ModeToggle />
         </div>
       </div>

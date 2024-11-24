@@ -17,10 +17,12 @@ export function HeroSection() {
           If you're looking for an AI chat platform that stands out from the crowd, Perchance AI Chat is the answer. Designed for creativity, personalization, and privacy, Perchance AI Chat redefines what AI conversations can be. Whether you're a storyteller, a professional, or just someone who loves engaging with AI, our platform offers unparalleled features that leave competitors in the dust.
           </p>
           <div className="flex justify-center md:justify-start">
-            <Button size="lg" className="text-lg font-semibold transition-all hover:scale-105">
+          <Button size="lg" asChild className="text-lg font-semibold transition-all hover:scale-105">
+            <a href="https://perchance.org/ai-chat" target="_blank" rel="noopener noreferrer">
               Get Started For Free
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            </a>
+          </Button>
           </div>
         </div>
         <div className="flex-1 flex justify-center md:justify-end">

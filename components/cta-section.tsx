@@ -10,8 +10,10 @@ export function CTASection() {
         <p className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7">
             Why settle for less when you can have an AI platform that’s creative, secure, and completely free? Perchance AI Chat is redefining the way we interact with technology, offering an experience that’s as unique as you are. Join thousands of users who have already discovered the difference.
         </p>
-        <Button size="lg" className="mt-4">
-          Start Chatting Now
+        <Button size="lg" asChild className="mt-4">
+          <a href="https://perchance.org/ai-chat" target="_blank" rel="noopener noreferrer">
+            Start Chatting Now
+          </a>
         </Button>
       </div>
     </section>
