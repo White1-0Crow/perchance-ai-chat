@@ -1,0 +1,1 @@
+This is an early NextJS version of the [perchance-ai-chat.com](https://perchance-ai-chat.com/) website, created with beginner-level skills purely for fun. Constructive criticism and feedback are welcome!
